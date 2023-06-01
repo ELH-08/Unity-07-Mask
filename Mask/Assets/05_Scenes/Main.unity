@@ -804,13 +804,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2081488601}
-        m_TargetAssemblyTypeName: ARSceneManager, Assembly-CSharp
-        m_MethodName: GotoScene
-        m_Mode: 5
+      - m_Target: {fileID: 262805919}
+        m_TargetAssemblyTypeName: ARFaceSwitcher, Assembly-CSharp
+        m_MethodName: UpdateFaceMaterial
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2100000, guid: dc50b9b5135e6dc409129051444de5b7, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: HelloARFoundation
@@ -1068,13 +1068,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2081488601}
-        m_TargetAssemblyTypeName: ARSceneManager, Assembly-CSharp
-        m_MethodName: GotoScene
-        m_Mode: 5
+      - m_Target: {fileID: 262805919}
+        m_TargetAssemblyTypeName: ARFaceSwitcher, Assembly-CSharp
+        m_MethodName: UpdateFaceMaterial
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2100000, guid: 51f2f23819ac13f43990466d5ba745ba, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: ImageTrackingObject

@@ -12,23 +12,27 @@ public class ARFaceSwitcher : MonoBehaviour
     {
         //초깃값
         arFaceManager = GetComponent<ARFaceManager>();                                     //스크립트 저장. ARSessionOrigin의 컴포넌트에 있음
-        currentMaterial = arFaceManager.facePrefab.GetComponent<MeshRenderer>().material;  //ARFaceManager 스크립트의 FacePrefab에 기본 재질 값을 저장  
+        currentMaterial = arFaceManager.facePrefab.GetComponent<MeshRenderer>().material;  //초기 재질값 저장. AR Face Manager - FacePrefab - AR Default Face - MeshRenderer - material 
 
     }
 
 
-    // Start is called before the first frame update
-    void Start()
+    //버튼 OnClick이벤트
+    public void UpdateFaceMaterial(Material material)    //(버튼 클릭에 따라) 재질 변경 함수
     {
-
-
-        
+        currentMaterial = material;
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
+        foreach (ARFace face in arFaceManager.trackables) 
+        {
+            face.GetComponent<MeshRenderer>().material = currentMaterial;
 
+        }
 
         
     }
